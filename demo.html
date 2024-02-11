@@ -7,16 +7,16 @@
     <script src="./drawfunction.js"></script>
 </head>
 <body>
-    <canvas id="c" width="500" height="500"></canvas>
+    <canvas id="c" width="50" height="50"></canvas>
     <script>
         function f(x) {
-            return x*x;
+            return x * x;
         }
         function f2(x) {
-            return 500 - x;
+            return 50 - x;
         }
         const ca = document.getElementById("c");
-        var d = new DrawFunc(ca, 500, 500);
+        var d = new DrawFunc(ca, 50, 50);
         d.drawFunc(f);
         d.drawFunc(f2, [255, 0, 0, 255]);
         d.updateCanvas();
